@@ -1,0 +1,56 @@
+body {
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.choices button {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.choices button:hover {
+    background: #0056b3;
+}
+.choices button:active {
+    transform: scale(0.92);
+}
+
+.result p, .result h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+.result .show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.score span {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.score .bounce {
+    transform: scale(1.3);
+}
+#winner {
+    color: #28a745;
+}
